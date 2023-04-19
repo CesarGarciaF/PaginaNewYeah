@@ -1,16 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from "@angular/common/http";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GraficaComponent } from './grafica/grafica.component';
+import { NivelComponent } from './nivel/nivel.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GraficaComponent,
+    NivelComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

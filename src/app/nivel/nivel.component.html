@@ -1,0 +1,29 @@
+<br><br>
+<link rel="stylesheet" href="/lib/w3.css">
+<!-- <h1 class="info"><STRONG>CISTERNA</STRONG></h1>
+    <p></p>
+    <img style="margin-left: 10%;"
+    width="900"
+    height="500"
+    alt="Cisterna de agua"
+    src="https://i.postimg.cc/nrSVjZPk/www.png"
+    /> 
+    <div class="content" role="main"> 
+    </div> -->
+<div class="toolbar" role="banner">
+    <div class="spacer"></div>
+</div>
+<div style=" text-align: center;" class="content" role="main">
+    <label style="font-size: xx-large;">Nivel actual: </label>
+    <label style="font-size: xx-large;color: blue; font-weight: bold;">{{ValorActualNivel}} %</label>
+    <br>
+    <label style="font-size: xx-large;">Volumen actual: </label>
+    <label style="font-size: xx-large;color: blue; font-weight: bold;">{{ValorActualVolumen}} ml</label>
+
+    <!--<div style="margin-right: 100px; margin-left: 100px; " class="chart-container">
+            <canvas id="MyChart" style="width: 900px;height: auto;">{{chart}}</canvas>
+        </div>-->
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width:{{ValorActualNivel}}%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+</div>
